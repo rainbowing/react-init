@@ -4,9 +4,7 @@ const DECREASE_PRODUCT = 'DECREASE_PRODUCT'
 const inProduct = (data) => ({ type: INCREASE_PRODUCT,data:data });
 const deProduct = () => ({ type: DECREASE_PRODUCT });
 
-let initState = {
-	
-}
+let initState = {}
 
 export function products(state = initState,action){
 	switch (action.type){

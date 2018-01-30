@@ -46,7 +46,9 @@ class Products extends React.Component{
 						<br/>
 						<button onClick={this.buy.bind(this)}>购买</button>
 						<br/>
-						{this.props.todos}
+						{'---' + this.props.todos}
+						<br/>
+						{this.props.counter.num}
 					</div>
 				</div>
 			</div>
@@ -56,7 +58,8 @@ class Products extends React.Component{
 
 const mapStateToProps = state => ({
   products: state.products,
-  todos:	state.todos
+  todos:	state.todos,
+  counter:  state.counter
 })
 
 const mapDispatchToProps = dispatch => ({
